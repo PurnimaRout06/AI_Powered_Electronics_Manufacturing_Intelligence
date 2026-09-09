@@ -1,0 +1,6 @@
+inventory_id,material_name,quantity_available,reorder_level,unit,last_updated
+1,PCB Boards,5000,1000,pieces,2026-08-23
+2,Resistors,10000,2000,pieces,2026-08-23
+3,Capacitors,8000,1600,pieces,2026-08-23
+4,Microcontrollers,3000,600,pieces,2026-08-23
+5,Solder Wire,2000,400,kg,2026-08-23

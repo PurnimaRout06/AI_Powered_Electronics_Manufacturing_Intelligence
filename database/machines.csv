@@ -1,0 +1,6 @@
+machine_id,machine_name,machine_type,location,status,installation_date
+1,PCB Assembly Line 01,Assembly Line,Production Floor A,Operational,2022-05-10
+2,PCB Assembly Line 02,Assembly Line,Production Floor A,Operational,2022-08-15
+3,CNC Precision Unit,CNC Machine,Production Floor B,Maintenance,2021-03-20
+4,Testing Station 01,Testing Equipment,Quality Floor,Operational,2023-01-12
+5,Testing Station 02,Testing Equipment,Quality Floor,Operational,2023-04-18

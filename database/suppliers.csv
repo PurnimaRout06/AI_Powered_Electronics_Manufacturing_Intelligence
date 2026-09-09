@@ -1,0 +1,6 @@
+supplier_id,supplier_name,material_supplied,contact_email,contact_phone,delivery_rating
+1,Supplier 1,PCB Boards,supplier1@example.com,9000000001,4.02
+2,Supplier 2,Resistors,supplier2@example.com,9000000002,4.95
+3,Supplier 3,Capacitors,supplier3@example.com,9000000003,4.49
+4,Supplier 4,Microcontrollers,supplier4@example.com,9000000004,4.32
+5,Supplier 5,Solder Wire,supplier5@example.com,9000000005,3.69
