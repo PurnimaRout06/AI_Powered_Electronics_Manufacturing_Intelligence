@@ -1,0 +1,174 @@
+maintenance_id,equipment_id,maintenance_date,maintenance_type,maintenance_status,downtime_hours,maintenance_cost
+1,4,2025-09-01,Corrective,Completed,5.03,12134.92
+2,4,2025-09-05,Preventive,Completed,2.43,5757.39
+3,3,2025-09-06,Routine Inspection,Completed,1.71,3505.76
+4,2,2025-09-07,Preventive,Completed,2.97,2633.45
+5,1,2025-09-10,Preventive,In Progress,2.46,3943.19
+6,3,2025-09-15,Preventive,In Progress,1.79,5631.04
+7,4,2025-09-15,Corrective,In Progress,5.06,8744.03
+8,1,2025-09-19,Routine Inspection,Completed,1.97,2682.57
+9,4,2025-09-21,Routine Inspection,Completed,0.88,2097.81
+10,5,2025-09-21,Corrective,Completed,3.72,11845.08
+11,1,2025-09-22,Preventive,Completed,2.31,5836.03
+12,4,2025-09-23,Routine Inspection,In Progress,0.67,3245.6
+13,5,2025-09-28,Routine Inspection,In Progress,1.66,1922.41
+14,1,2025-10-03,Routine Inspection,Completed,1.11,3852.25
+15,5,2025-10-04,Preventive,In Progress,1.8,3882.45
+16,2,2025-10-11,Routine Inspection,In Progress,1.26,3756.45
+17,3,2025-10-14,Preventive,Completed,1.87,2790.27
+18,1,2025-10-16,Routine Inspection,Completed,1.78,2019.55
+19,5,2025-10-19,Preventive,Completed,1.88,4232.86
+20,3,2025-10-25,Routine Inspection,Completed,1.59,3901.86
+21,1,2025-10-28,Preventive,Completed,1.95,5517.0
+22,2,2025-10-28,Corrective,Completed,5.38,10092.59
+23,3,2025-10-29,Preventive,Completed,2.02,4279.8
+24,5,2025-10-29,Routine Inspection,Completed,1.91,3793.12
+25,3,2025-10-30,Preventive,Completed,2.46,4758.34
+26,4,2025-10-30,Preventive,Completed,1.53,2846.64
+27,5,2025-10-30,Preventive,Completed,1.83,2529.3
+28,2,2025-10-31,Preventive,Completed,2.83,3051.21
+29,3,2025-11-02,Preventive,Completed,2.37,5261.31
+30,1,2025-11-10,Preventive,Completed,1.12,5469.25
+31,2,2025-11-10,Preventive,In Progress,1.92,4634.07
+32,5,2025-11-10,Routine Inspection,In Progress,0.52,2201.65
+33,1,2025-11-12,Routine Inspection,In Progress,0.81,3826.27
+34,2,2025-11-12,Corrective,In Progress,3.15,9570.52
+35,1,2025-11-16,Preventive,Completed,1.68,4302.75
+36,3,2025-11-16,Preventive,Completed,1.46,3670.23
+37,4,2025-11-17,Routine Inspection,In Progress,0.88,2155.39
+38,5,2025-11-20,Preventive,Completed,1.69,2600.9
+39,1,2025-11-23,Routine Inspection,In Progress,1.3,2835.47
+40,1,2025-11-26,Preventive,Completed,1.68,2954.47
+41,3,2025-12-02,Corrective,Completed,3.21,13719.84
+42,3,2025-12-03,Corrective,Completed,5.26,11309.49
+43,1,2025-12-06,Preventive,Completed,2.24,4171.14
+44,2,2025-12-07,Routine Inspection,In Progress,1.06,2652.64
+45,3,2025-12-10,Preventive,In Progress,2.02,5646.25
+46,3,2025-12-12,Preventive,Completed,1.73,4315.07
+47,3,2025-12-13,Routine Inspection,Completed,0.95,2908.4
+48,5,2025-12-14,Preventive,Completed,1.56,5034.88
+49,1,2025-12-16,Preventive,In Progress,1.27,3602.4
+50,5,2025-12-19,Routine Inspection,Completed,1.82,1540.44
+51,2,2025-12-21,Corrective,Completed,4.25,13606.04
+52,2,2026-01-03,Routine Inspection,In Progress,0.97,2771.22
+53,2,2026-01-04,Preventive,Completed,2.4,5923.26
+54,3,2026-01-04,Corrective,Completed,4.95,10218.77
+55,2,2026-01-05,Preventive,Completed,2.14,5653.21
+56,5,2026-01-07,Routine Inspection,Completed,1.74,3116.07
+57,1,2026-01-10,Routine Inspection,Completed,1.85,2319.38
+58,2,2026-01-10,Preventive,Completed,1.97,5258.97
+59,2,2026-01-17,Preventive,In Progress,1.69,5497.61
+60,1,2026-01-18,Preventive,Completed,1.02,4816.58
+61,5,2026-01-19,Routine Inspection,Completed,0.86,1589.49
+62,3,2026-01-23,Corrective,Completed,3.73,12956.81
+63,2,2026-01-24,Corrective,Completed,5.34,11294.12
+64,3,2026-01-25,Preventive,In Progress,2.64,3921.1
+65,4,2026-01-26,Routine Inspection,Completed,0.55,3712.31
+66,5,2026-01-26,Preventive,Completed,2.82,3858.62
+67,2,2026-01-27,Preventive,Completed,2.2,4237.74
+68,3,2026-01-29,Routine Inspection,In Progress,0.53,3510.99
+69,5,2026-01-29,Routine Inspection,Completed,1.59,2853.07
+70,5,2026-01-31,Routine Inspection,In Progress,1.46,2559.28
+71,1,2026-02-06,Routine Inspection,Completed,1.97,2117.19
+72,3,2026-02-10,Corrective,Completed,5.29,9530.78
+73,2,2026-02-15,Routine Inspection,Completed,0.71,2889.51
+74,5,2026-02-16,Preventive,Completed,2.41,4206.35
+75,1,2026-02-22,Corrective,Completed,3.24,14416.17
+76,2,2026-02-24,Routine Inspection,In Progress,1.58,1565.08
+77,3,2026-02-24,Routine Inspection,Completed,0.8,3333.05
+78,3,2026-02-26,Routine Inspection,Completed,1.85,3859.84
+79,1,2026-02-27,Corrective,Completed,4.53,13130.66
+80,2,2026-02-27,Corrective,Completed,4.43,8525.2
+81,4,2026-03-03,Preventive,Completed,1.99,3654.0
+82,3,2026-03-04,Preventive,Completed,2.28,3281.14
+83,3,2026-03-07,Preventive,Completed,2.82,4914.25
+84,3,2026-03-09,Corrective,In Progress,4.61,8138.2
+85,5,2026-03-09,Routine Inspection,Completed,1.34,3233.72
+86,3,2026-03-12,Routine Inspection,Completed,0.74,2830.82
+87,3,2026-03-14,Corrective,Completed,4.92,8078.39
+88,5,2026-03-14,Preventive,In Progress,2.89,5837.28
+89,2,2026-03-16,Preventive,Completed,1.73,2693.44
+90,2,2026-03-17,Routine Inspection,Completed,0.87,2832.84
+91,3,2026-03-17,Routine Inspection,In Progress,1.24,2879.83
+92,3,2026-03-18,Routine Inspection,In Progress,0.64,2073.77
+93,2,2026-03-19,Routine Inspection,In Progress,0.9,3978.98
+94,4,2026-03-19,Preventive,Completed,1.56,2825.21
+95,5,2026-03-19,Preventive,Completed,2.9,3245.13
+96,1,2026-03-20,Preventive,Completed,2.18,4846.24
+97,2,2026-03-20,Corrective,Completed,5.29,8634.88
+98,3,2026-03-25,Preventive,Completed,2.0,5178.7
+99,3,2026-04-06,Routine Inspection,Completed,1.41,2953.89
+100,1,2026-04-09,Preventive,Completed,1.09,5475.87
+101,3,2026-04-09,Preventive,Completed,2.12,4557.49
+102,3,2026-04-10,Preventive,Completed,2.23,5980.2
+103,5,2026-04-15,Routine Inspection,In Progress,1.63,3257.58
+104,5,2026-04-16,Preventive,Completed,2.11,3499.18
+105,3,2026-04-17,Preventive,Completed,2.78,5196.96
+106,4,2026-04-18,Routine Inspection,Completed,0.77,3180.11
+107,3,2026-04-22,Routine Inspection,Completed,0.96,3847.58
+108,3,2026-04-23,Preventive,Completed,1.57,5830.69
+109,1,2026-04-24,Routine Inspection,Completed,1.25,2258.6
+110,1,2026-04-26,Corrective,Completed,3.41,14146.82
+111,3,2026-04-28,Preventive,Completed,2.08,3057.65
+112,5,2026-05-05,Routine Inspection,In Progress,1.21,1714.41
+113,5,2026-05-08,Preventive,In Progress,1.77,3234.07
+114,1,2026-05-09,Corrective,In Progress,5.87,8921.18
+115,5,2026-05-11,Routine Inspection,In Progress,0.63,2672.03
+116,4,2026-05-12,Preventive,In Progress,1.96,5998.85
+117,5,2026-05-12,Corrective,Completed,3.34,8661.74
+118,1,2026-05-13,Corrective,Completed,3.66,13099.4
+119,3,2026-05-13,Preventive,In Progress,2.61,4223.1
+120,2,2026-05-15,Corrective,Completed,4.3,12648.05
+121,1,2026-05-16,Preventive,Completed,1.23,5943.41
+122,2,2026-05-18,Corrective,Completed,5.07,13828.72
+123,5,2026-05-19,Routine Inspection,Completed,1.13,2186.69
+124,2,2026-05-20,Routine Inspection,Completed,1.03,1676.42
+125,3,2026-05-20,Preventive,Completed,2.14,3460.56
+126,2,2026-05-21,Routine Inspection,Completed,1.94,3146.9
+127,5,2026-05-21,Preventive,Completed,2.0,5883.47
+128,3,2026-05-22,Corrective,Completed,3.19,8744.95
+129,3,2026-05-24,Routine Inspection,Completed,1.67,3006.13
+130,5,2026-05-27,Corrective,Completed,5.6,12158.33
+131,5,2026-05-28,Corrective,Completed,3.13,9494.44
+132,3,2026-05-30,Routine Inspection,In Progress,1.01,3362.09
+133,3,2026-05-31,Routine Inspection,Completed,1.0,3309.53
+134,5,2026-05-31,Routine Inspection,Completed,0.63,2342.64
+135,1,2026-06-12,Preventive,Completed,2.68,5046.65
+136,3,2026-06-12,Preventive,Completed,1.86,4166.49
+137,2,2026-06-13,Preventive,Completed,2.46,5232.97
+138,3,2026-06-20,Preventive,Completed,2.77,2596.94
+139,3,2026-06-23,Preventive,In Progress,2.07,5942.98
+140,2,2026-06-24,Preventive,Completed,1.43,2749.61
+141,3,2026-06-26,Corrective,Completed,3.21,14899.45
+142,4,2026-06-26,Preventive,Completed,1.65,3958.88
+143,3,2026-06-28,Corrective,In Progress,5.24,11051.03
+144,1,2026-06-29,Preventive,Completed,1.51,5725.37
+145,1,2026-07-04,Preventive,In Progress,1.54,5523.91
+146,3,2026-07-07,Preventive,Completed,1.59,3568.5
+147,2,2026-07-08,Preventive,In Progress,1.43,2865.19
+148,2,2026-07-11,Corrective,Completed,4.12,12679.72
+149,1,2026-07-14,Routine Inspection,Completed,1.13,3723.82
+150,4,2026-07-17,Corrective,In Progress,4.08,9543.63
+151,1,2026-07-19,Routine Inspection,Completed,1.09,2093.49
+152,3,2026-07-21,Preventive,In Progress,1.83,3571.66
+153,5,2026-07-21,Preventive,Completed,2.13,4320.91
+154,2,2026-07-22,Routine Inspection,Completed,0.97,3324.59
+155,4,2026-07-24,Preventive,In Progress,1.67,5902.42
+156,1,2026-07-28,Preventive,Completed,1.98,3932.31
+157,2,2026-07-28,Preventive,Completed,1.27,4394.52
+158,5,2026-07-28,Preventive,Completed,1.28,3280.92
+159,1,2026-07-30,Preventive,Completed,2.86,5263.57
+160,3,2026-07-31,Routine Inspection,In Progress,1.32,2667.38
+161,4,2026-08-02,Preventive,In Progress,1.14,3528.42
+162,2,2026-08-04,Routine Inspection,Completed,0.85,2493.31
+163,3,2026-08-07,Preventive,In Progress,2.83,2750.49
+164,3,2026-08-09,Corrective,In Progress,3.9,9068.99
+165,1,2026-08-12,Preventive,In Progress,1.85,4412.32
+166,3,2026-08-12,Preventive,Completed,2.17,3099.97
+167,3,2026-08-13,Routine Inspection,Completed,1.71,2095.04
+168,4,2026-08-14,Preventive,In Progress,1.28,2950.69
+169,5,2026-08-14,Preventive,In Progress,2.48,3780.97
+170,2,2026-08-15,Preventive,In Progress,1.69,4069.43
+171,3,2026-08-15,Routine Inspection,Completed,1.2,2612.92
+172,3,2026-08-20,Preventive,Completed,2.97,2876.86
+173,4,2026-08-23,Preventive,Completed,1.28,3468.81

@@ -1,0 +1,6 @@
+employee_id,employee_name,department,role,shift
+1,Employee 1,Production,Machine Operator,Morning
+2,Employee 2,Quality,Quality Inspector,Afternoon
+3,Employee 3,Maintenance,Maintenance Technician,Night
+4,Employee 4,Production,Production Supervisor,Morning
+5,Employee 5,Maintenance,Technician,Afternoon

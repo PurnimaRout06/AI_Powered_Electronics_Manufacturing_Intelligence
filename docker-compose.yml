@@ -1,0 +1,110 @@
+# =============================================================================
+# docker-compose.yml — runs the whole stack together for local dev or a
+# simple single-host deployment: MySQL, the ML service, the Node backend,
+# and the frontend (served as a static build behind nginx).
+#
+# Usage:
+#   1. Copy backend/.env.example -> backend/.env and fill in real values.
+#   2. Copy ml-service/.env.example -> ml-service/.env.
+#   3. Copy manufacturing-intelligence/.env.example -> manufacturing-intelligence/.env.
+#   4. Place the four .pkl model files in ml-service/models/.
+#   5. docker compose up --build
+#   6. Load schema + data: see database/README section in the root README.
+# =============================================================================
+
+services:
+  # ---------------------------------------------------------------------------
+  # MySQL database — stores all 12 manufacturing tables plus users/preferences.
+  # ---------------------------------------------------------------------------
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      # Root password for the MySQL container itself. Match this to
+      # DB_PASSWORD in backend/.env if DB_USER=root.
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-changeme}
+      # Database created automatically on first boot.
+      MYSQL_DATABASE: ${DB_NAME:-electronics_manufacturing_db}
+    ports:
+      # Exposes MySQL on the host too, in case you want to connect with a
+      # GUI client. Remove this in production if not needed.
+      - '3306:3306'
+    volumes:
+      # Persists data across container restarts.
+      - db_data:/var/lib/mysql
+      # Auto-runs schema.sql the very first time the container starts with
+      # an empty data directory.
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+    healthcheck:
+      test: ['CMD', 'mysqladmin', 'ping', '-h', 'localhost']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # ---------------------------------------------------------------------------
+  # ML service — Python/FastAPI, serves the 4 trained scikit-learn models.
+  # ---------------------------------------------------------------------------
+  ml-service:
+    build: ./ml-service
+    restart: unless-stopped
+    environment:
+      # Path inside the container where the .pkl files are mounted (below).
+      MODELS_DIR: /app/models
+      CORS_ORIGINS: http://backend:4000
+    volumes:
+      # Mount your local models folder so you don't have to rebuild the
+      # image every time a model is retrained.
+      - ./ml-service/models:/app/models:ro
+    ports:
+      - '8000:8000'
+
+  # ---------------------------------------------------------------------------
+  # Backend — Node/Express API. Connects to `db` and calls `ml-service`.
+  # ---------------------------------------------------------------------------
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+      ml-service:
+        condition: service_started
+    environment:
+      PORT: 4000
+      # "db" is the service name above — Docker's internal DNS resolves it.
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_USER: root
+      DB_PASSWORD: ${DB_PASSWORD:-changeme}
+      DB_NAME: ${DB_NAME:-electronics_manufacturing_db}
+      DB_CONNECTION_LIMIT: 10
+      JWT_SECRET: ${JWT_SECRET:?set a real JWT_SECRET in a .env file next to this compose file}
+      JWT_EXPIRES_IN: 12h
+      BCRYPT_SALT_ROUNDS: 10
+      # "ml-service" is the service name above.
+      ML_SERVICE_URL: http://ml-service:8000
+      ML_SERVICE_TIMEOUT_MS: 5000
+      CORS_ORIGINS: http://localhost:5173,http://localhost:8080
+    ports:
+      - '4000:4000'
+
+  # ---------------------------------------------------------------------------
+  # Frontend — built as static files and served by nginx. For local dev you
+  # will usually run `npm run dev` directly instead of this service (faster
+  # hot reload); this is meant for a simple production-style deployment.
+  # ---------------------------------------------------------------------------
+  frontend:
+    build:
+      context: ./manufacturing-intelligence
+      args:
+        # Baked into the static build at build time — must be reachable
+        # from the *browser*, not just from inside Docker's network.
+        VITE_API_BASE_URL: ${FRONTEND_API_BASE_URL:-http://localhost:4000/api}
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - '8080:80'
+
+volumes:
+  db_data:

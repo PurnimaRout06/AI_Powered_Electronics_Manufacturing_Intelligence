@@ -1,0 +1,4 @@
+shift_id,shift_name,start_time,end_time,supervisor
+1,Morning,06:00:00,14:00:00,Supervisor 1
+2,Afternoon,14:00:00,22:00:00,Supervisor 2
+3,Night,22:00:00,06:00:00,Supervisor 3
